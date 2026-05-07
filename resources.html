@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Physics in Action</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f4f7fa;
+            color: #1a2b3c;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .site-header {
+            background: #0b2b44;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .main-nav a {
+            color: #ccddee;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.4rem 0;
+            margin-left: 2rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: white;
+            border-bottom-color: #4fc3f7;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #0b2b44;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid #1e6fa5;
+            padding-left: 1.2rem;
+        }
+        .resource-category {
+            background: white;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            margin-bottom: 2rem;
+        }
+        .resource-category h2 {
+            color: #0b2b44;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .resource-category ul {
+            list-style: none;
+            padding: 0;
+        }
+        .resource-category li {
+            margin-bottom: 0.8rem;
+        }
+        .resource-category a {
+            color: #1e6fa5;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: 0.2s;
+        }
+        .resource-category a:hover {
+            border-bottom-color: #1e6fa5;
+        }
+        .footer {
+            margin-top: auto;
+            background: #0b2b44;
+            color: #b0c7d9;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Physics in Action</div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="practical.html">Practical Work</a>
+            <a href="projects.html">Projects</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="formulas.html">Formulas</a>
+            <a href="resources.html" class="active">Resources</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Further Resources</h1>
+        <div class="resource-category">
+            <h2>Interactive Simulations</h2>
+            <ul>
+                <li><a href="https://phet.colorado.edu" target="_blank" rel="noopener">PhET Interactive Simulations</a> – University of Colorado Boulder</li>
+                <li><a href="https://www.geogebra.org" target="_blank" rel="noopener">GeoGebra</a> – Physics applets and graphs</li>
+                <li><a href="https://ophysics.com" target="_blank" rel="noopener">oPhysics</a> – Simple interactive physics diagrams</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2>Reference &amp; Revision</h2>
+            <ul>
+                <li><a href="https://www.bbc.co.uk/bitesize/subjects/zpm6fg8" target="_blank" rel="noopener">BBC Bitesize Physics</a> – GCSE revision</li>
+                <li><a href="https://www.physicsclassroom.com" target="_blank" rel="noopener">The Physics Classroom</a> – Tutorials and multimedia</li>
+                <li><a href="https://hyperphysics.phy-astr.gsu.edu/hbase/hph.html" target="_blank" rel="noopener">HyperPhysics</a> – Concept maps and in‑depth explanations</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2>Video Channels</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/c/MinutePhysics" target="_blank" rel="noopener">MinutePhysics</a> – Concise animated explanations</li>
+                <li><a href="https://www.youtube.com/c/veritasium" target="_blank" rel="noopener">Veritasium</a> – Science and engineering demonstrations</li>
+                <li><a href="https://www.youtube.com/c/FlippingPhysics" target="_blank" rel="noopener">Flipping Physics</a> – Detailed lectures and problem solving</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Physics in Action &mdash; Secondary School Physics Resource</p>
+    </footer>
+</body>
+</html>

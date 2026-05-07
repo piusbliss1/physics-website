@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulas | Physics in Action</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f4f7fa;
+            color: #1a2b3c;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .site-header {
+            background: #0b2b44;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .main-nav a {
+            color: #ccddee;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.4rem 0;
+            margin-left: 2rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: white;
+            border-bottom-color: #4fc3f7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #0b2b44;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid #b45f06;
+            padding-left: 1.2rem;
+        }
+        .formula-card {
+            background: white;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .formula-item {
+            background: #eef3f9;
+            border-radius: 12px;
+            padding: 1.2rem;
+            font-family: 'Courier New', monospace;
+        }
+        .formula-item h2 {
+            font-size: 1.1rem;
+            color: #0b2b44;
+            margin-bottom: 0.4rem;
+        }
+        .formula-item .equation {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #134b6e;
+        }
+        .formula-item p {
+            font-size: 0.9rem;
+            color: #4a5568;
+            margin-top: 0.3rem;
+        }
+        .footer {
+            margin-top: auto;
+            background: #0b2b44;
+            color: #b0c7d9;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Physics in Action</div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="practical.html">Practical Work</a>
+            <a href="projects.html">Projects</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="formulas.html" class="active">Formulas</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Key Formulas</h1>
+        <div class="formula-card">
+            <div class="formula-item">
+                <h2>Ohm's Law</h2>
+                <div class="equation">V = I &times; R</div>
+                <p>Voltage = Current &times; Resistance</p>
+            </div>
+            <div class="formula-item">
+                <h2>Newton's Second Law</h2>
+                <div class="equation">F = m &times; a</div>
+                <p>Force = mass &times; acceleration</p>
+            </div>
+            <div class="formula-item">
+                <h2>Wave Speed</h2>
+                <div class="equation">v = f &times; &lambda;</div>
+                <p>Speed = frequency &times; wavelength</p>
+            </div>
+            <div class="formula-item">
+                <h2>Heat Energy</h2>
+                <div class="equation">Q = m c &Delta;T</div>
+                <p>Energy = mass &times; specific heat capacity &times; temperature change</p>
+            </div>
+            <div class="formula-item">
+                <h2>Kinetic Energy</h2>
+                <div class="equation">KE = &frac12; m v<sup>2</sup></div>
+                <p>Kinetic energy</p>
+            </div>
+            <div class="formula-item">
+                <h2>Gravitational Potential Energy</h2>
+                <div class="equation">PE = m g h</div>
+                <p>Potential energy = mass &times; g &times; height</p>
+            </div>
+            <div class="formula-item">
+                <h2>Period of a Pendulum</h2>
+                <div class="equation">T = 2&pi; &radic;(L/g)</div>
+                <p>Period = 2&pi; &times; sqrt(length / g)</p>
+            </div>
+            <div class="formula-item">
+                <h2>Snell's Law</h2>
+                <div class="equation">n<sub>1</sub> sin&theta;<sub>1</sub> = n<sub>2</sub> sin&theta;<sub>2</sub></div>
+                <p>Refractive index relationship</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Physics in Action &mdash; Secondary School Physics Resource</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary | Physics in Action</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f4f7fa;
+            color: #1a2b3c;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .site-header {
+            background: #0b2b44;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .main-nav a {
+            color: #ccddee;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.4rem 0;
+            margin-left: 2rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: white;
+            border-bottom-color: #4fc3f7;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #0b2b44;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid #3e8e41;
+            padding-left: 1.2rem;
+        }
+        .glossary-list {
+            background: white;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            column-count: 2;
+            column-gap: 2rem;
+        }
+        .term {
+            margin-bottom: 1.5rem;
+            break-inside: avoid;
+        }
+        .term h2 {
+            font-size: 1.2rem;
+            color: #0b2b44;
+            margin-bottom: 0.2rem;
+        }
+        .term p {
+            font-size: 0.95rem;
+            color: #2c3e50;
+        }
+        @media (max-width: 600px) {
+            .glossary-list {
+                column-count: 1;
+            }
+        }
+        .footer {
+            margin-top: auto;
+            background: #0b2b44;
+            color: #b0c7d9;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Physics in Action</div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="practical.html">Practical Work</a>
+            <a href="projects.html">Projects</a>
+            <a href="glossary.html" class="active">Glossary</a>
+            <a href="formulas.html">Formulas</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Physics Glossary</h1>
+        <div class="glossary-list">
+            <div class="term"><h2>Acceleration</h2><p>Rate of change of velocity (m/s²).</p></div>
+            <div class="term"><h2>Amplitude</h2><p>Maximum displacement from equilibrium in a wave.</p></div>
+            <div class="term"><h2>Conduction</h2><p>Transfer of heat through a solid by particle vibration.</p></div>
+            <div class="term"><h2>Convection</h2><p>Heat transfer in fluids via movement of the fluid itself.</p></div>
+            <div class="term"><h2>Current (I)</h2><p>Flow of electric charge, measured in amperes (A).</p></div>
+            <div class="term"><h2>Electromagnet</h2><p>A magnet created by electric current in a coil.</p></div>
+            <div class="term"><h2>Frequency (f)</h2><p>Number of complete waves per second, in hertz (Hz).</p></div>
+            <div class="term"><h2>Inertia</h2><p>Tendency of an object to resist changes in motion.</p></div>
+            <div class="term"><h2>Ohm's Law</h2><p>V = IR; voltage is proportional to current for a fixed resistor.</p></div>
+            <div class="term"><h2>Period (T)</h2><p>Time taken for one complete oscillation (seconds).</p></div>
+            <div class="term"><h2>Potential difference</h2><p>Energy per unit charge (voltage), in volts (V).</p></div>
+            <div class="term"><h2>Radiation</h2><p>Heat transfer via electromagnetic waves; no medium needed.</p></div>
+            <div class="term"><h2>Resistance (R)</h2><p>Opposition to current flow, measured in ohms (Ω).</p></div>
+            <div class="term"><h2>Specific heat capacity</h2><p>Energy required to raise 1 kg of a substance by 1 °C.</p></div>
+            <div class="term"><h2>Velocity</h2><p>Speed in a given direction (vector).</p></div>
+            <div class="term"><h2>Wavelength (λ)</h2><p>Distance between two consecutive crests or troughs.</p></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Physics in Action &mdash; Secondary School Physics Resource</p>
+    </footer>
+</body>
+</html>

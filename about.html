@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Physics in Action</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f4f7fa;
+            color: #1a2b3c;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .site-header {
+            background: #0b2b44;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .main-nav a {
+            color: #ccddee;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.4rem 0;
+            margin-left: 2rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: white;
+            border-bottom-color: #4fc3f7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #0b2b44;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid #4a6fa5;
+            padding-left: 1.2rem;
+        }
+        .about-box {
+            background: white;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+        }
+        .about-box h2 {
+            color: #1e2b3c;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+        .about-box p {
+            margin-bottom: 1.2rem;
+        }
+        .footer {
+            margin-top: auto;
+            background: #0b2b44;
+            color: #b0c7d9;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Physics in Action</div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="practical.html">Practical Work</a>
+            <a href="projects.html">Projects</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="formulas.html">Formulas</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html" class="active">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>About Physics in Action</h1>
+        <div class="about-box">
+            <h2>Our Purpose</h2>
+            <p>Physics in Action provides a structured, curriculum‑aligned resource for secondary school students and teachers. The website covers core theory, step‑by‑step laboratory practicals, and creative hands‑on projects. All content is designed to reinforce understanding through clear explanations and practical application.</p>
+
+            <h2>How to Use</h2>
+            <p>Navigate between the <strong>Teaching</strong> (concept lessons), <strong>Practical Work</strong> (laboratory experiments), and <strong>Projects</strong> (build‑based learning) modules via the top menu. Support pages like <strong>Glossary</strong>, <strong>Formulas</strong>, and <strong>Resources</strong> offer quick reference and further study.</p>
+
+            <h2>Who It’s For</h2>
+            <p>Created for learners aged 14–18, following GCSE, IGCSE, or equivalent secondary physics curricula. Also useful for teachers seeking ready‑made experiment instructions and project ideas.</p>
+
+            <h2>Contact & Contributions</h2>
+            <p>This is an open educational resource. To suggest improvements, report issues, or contribute additional content, please visit our GitHub repository.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Physics in Action &mdash; Secondary School Physics Resource</p>
+    </footer>
+</body>
+</html>
