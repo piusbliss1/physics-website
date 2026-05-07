@@ -3,25 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching | Physics in Action</title>
+    <title>Resources | Physics in Action</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif; background: #f4f7fa; color: #1a2b3c; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
-        .site-header { background: #0b2b44; color: white; padding: 1rem 2rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .logo { font-size: 1.6rem; font-weight: 600; letter-spacing: 0.5px; }
-        .main-nav a { color: #ccddee; text-decoration: none; font-weight: 500; padding: 0.4rem 0; margin-left: 2rem; border-bottom: 2px solid transparent; transition: 0.2s; }
-        .main-nav a:hover, .main-nav a.active { color: white; border-bottom-color: #4fc3f7; }
-        .container { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; flex: 1; }
-        h1 { font-size: 2.2rem; color: #0b2b44; margin-bottom: 1.5rem; border-left: 6px solid #1e6fa5; padding-left: 1.2rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .card { background: white; border-radius: 14px; padding: 1.8rem; box-shadow: 0 8px 20px rgba(0,0,0,0.04); border-top: 5px solid #1e6fa5; }
-        .card h2 { font-size: 1.5rem; color: #0b2b44; margin-bottom: 0.8rem; }
-        .card .sub { color: #5d6d7e; font-size: 0.9rem; margin-bottom: 0.8rem; font-weight: 500; }
-        .card p { margin-bottom: 1rem; }
-        .formula { background: #eef3f9; padding: 0.5rem 1rem; border-radius: 8px; font-family: 'Courier New', monospace; font-weight: 600; color: #0b2b44; margin: 0.8rem 0; }
-        .btn-detail { background: #1e6fa5; color: white; border: none; padding: 0.6rem 1.4rem; border-radius: 30px; font-weight: 600; cursor: pointer; transition: background 0.2s; margin-top: 0.5rem; }
-        .btn-detail:hover { background: #134b6e; }
-        .footer { margin-top: auto; background: #0b2b44; color: #b0c7d9; text-align: center; padding: 1.5rem; font-size: 0.9rem; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f4f7fa;
+            color: #1a2b3c;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .site-header {
+            background: #0b2b44;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .main-nav a {
+            color: #ccddee;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.4rem 0;
+            margin-left: 2rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: white;
+            border-bottom-color: #4fc3f7;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #0b2b44;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid #1e6fa5;
+            padding-left: 1.2rem;
+        }
+        .resource-category {
+            background: white;
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            margin-bottom: 2rem;
+        }
+        .resource-category h2 {
+            color: #0b2b44;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .resource-category ul {
+            list-style: none;
+            padding: 0;
+        }
+        .resource-category li {
+            margin-bottom: 0.8rem;
+        }
+        .resource-category a {
+            color: #1e6fa5;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: 0.2s;
+        }
+        .resource-category a:hover {
+            border-bottom-color: #1e6fa5;
+        }
+        .footer {
+            margin-top: auto;
+            background: #0b2b44;
+            color: #b0c7d9;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -29,51 +105,41 @@
         <div class="logo">Physics in Action</div>
         <nav class="main-nav">
             <a href="index.html">Home</a>
-            <a href="teaching.html" class="active">Teaching</a>
+            <a href="teaching.html">Teaching</a>
             <a href="practical.html">Practical Work</a>
             <a href="projects.html">Projects</a>
             <a href="glossary.html">Glossary</a>
             <a href="formulas.html">Formulas</a>
-            <a href="resources.html">Resources</a>
+            <a href="resources.html" class="active">Resources</a>
             <a href="about.html">About</a>
         </nav>
     </header>
 
     <main class="container">
-        <h1>Core Physics Lessons</h1>
-        <div class="grid">
-            <div class="card">
-                <h2>Electricity: Ohm's Law</h2>
-                <div class="sub">Voltage, Current, Resistance</div>
-                <p>Ohm’s law relates potential difference (V), current (I), and resistance (R). Essential for analysing series and parallel circuits.</p>
-                <div class="formula">V = I &times; R</div>
-                <p>Series: R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub> + ...<br>Parallel: 1/R<sub>total</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + ...</p>
-                <button class="btn-detail" onclick="alert('Ohm\'s Law: V = I * R\nIn series: current constant, voltage divides.\nIn parallel: voltage constant, current divides.')">Revision Note</button>
-            </div>
-            <div class="card">
-                <h2>Mechanics: Newton's Laws</h2>
-                <div class="sub">Inertia, Force, Action-Reaction</div>
-                <p>Three fundamental laws that govern motion. From seatbelts to rocket propulsion, they explain everyday phenomena.</p>
-                <div class="formula">F = m &times; a</div>
-                <p>1st: Inertia. 2nd: Net force causes acceleration. 3rd: Forces come in pairs.</p>
-                <button class="btn-detail" onclick="alert('1st Law: An object remains at rest or in uniform motion unless acted upon.\n2nd Law: F = ma.\n3rd Law: For every action there is an equal and opposite reaction.')">See Details</button>
-            </div>
-            <div class="card">
-                <h2>Waves: Properties</h2>
-                <div class="sub">Transverse &amp; Longitudinal</div>
-                <p>Waves transfer energy. Frequency (f), wavelength (&lambda;), amplitude, and speed (v) are key parameters.</p>
-                <div class="formula">v = f &times; &lambda;</div>
-                <p>Transverse: light, water ripples. Longitudinal: sound. Wave speed depends on medium.</p>
-                <button class="btn-detail" onclick="alert('Wave equation: v = f * lambda.\nTransverse: displacement perpendicular to direction.\nLongitudinal: displacement parallel.')">Wave Facts</button>
-            </div>
-            <div class="card">
-                <h2>Thermal Physics</h2>
-                <div class="sub">Heat, Temperature &amp; Transfer</div>
-                <p>Heat is energy in transit; temperature measures average kinetic energy. Conduction, convection, and radiation dominate transfer.</p>
-                <div class="formula">Q = m &times; c &times; &Delta;T</div>
-                <p>Specific heat capacity (c) determines energy needed to change temperature.</p>
-                <button class="btn-detail" onclick="alert('Heat transfer: conduction (solids), convection (fluids), radiation (no medium).\nQ = m * c * delta T.\nUnits: Joules.')">Thermal Summary</button>
-            </div>
+        <h1>Further Resources</h1>
+        <div class="resource-category">
+            <h2>Interactive Simulations</h2>
+            <ul>
+                <li><a href="https://phet.colorado.edu" target="_blank" rel="noopener">PhET Interactive Simulations</a> – University of Colorado Boulder</li>
+                <li><a href="https://www.geogebra.org" target="_blank" rel="noopener">GeoGebra</a> – Physics applets and graphs</li>
+                <li><a href="https://ophysics.com" target="_blank" rel="noopener">oPhysics</a> – Simple interactive physics diagrams</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2>Reference &amp; Revision</h2>
+            <ul>
+                <li><a href="https://www.bbc.co.uk/bitesize/subjects/zpm6fg8" target="_blank" rel="noopener">BBC Bitesize Physics</a> – GCSE revision</li>
+                <li><a href="https://www.physicsclassroom.com" target="_blank" rel="noopener">The Physics Classroom</a> – Tutorials and multimedia</li>
+                <li><a href="https://hyperphysics.phy-astr.gsu.edu/hbase/hph.html" target="_blank" rel="noopener">HyperPhysics</a> – Concept maps and in‑depth explanations</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2>Video Channels</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/c/MinutePhysics" target="_blank" rel="noopener">MinutePhysics</a> – Concise animated explanations</li>
+                <li><a href="https://www.youtube.com/c/veritasium" target="_blank" rel="noopener">Veritasium</a> – Science and engineering demonstrations</li>
+                <li><a href="https://www.youtube.com/c/FlippingPhysics" target="_blank" rel="noopener">Flipping Physics</a> – Detailed lectures and problem solving</li>
+            </ul>
         </div>
     </main>
 
