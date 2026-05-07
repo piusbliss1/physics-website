@@ -5,133 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical Work | Physics in Action</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
-            background: #f4f7fa;
-            color: #1a2b3c;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .site-header {
-            background: #0b2b44;
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-        .main-nav a {
-            color: #ccddee;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.4rem 0;
-            margin-left: 2rem;
-            border-bottom: 2px solid transparent;
-            transition: 0.2s;
-        }
-        .main-nav a:hover,
-        .main-nav a.active {
-            color: white;
-            border-bottom-color: #4fc3f7;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-            flex: 1;
-        }
-        h1 {
-            font-size: 2.2rem;
-            color: #0b2b44;
-            margin-bottom: 1.5rem;
-            border-left: 6px solid #2e7d32;
-            padding-left: 1.2rem;
-        }
-        .experiment-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .exp-card {
-            background: white;
-            border-radius: 14px;
-            padding: 1.8rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-            border-left: 6px solid #2e7d32;
-        }
-        .exp-card h2 {
-            font-size: 1.5rem;
-            color: #0b2b44;
-        }
-        .tag {
-            display: inline-block;
-            background: #e8f5e9;
-            color: #2e7d32;
-            font-weight: 600;
-            font-size: 0.8rem;
-            padding: 0.2rem 1rem;
-            border-radius: 20px;
-            margin: 0.6rem 0 0.8rem;
-        }
-        .safety {
-            background: #fff8e1;
-            border-left: 4px solid #f9a825;
-            padding: 0.7rem 1rem;
-            margin: 1rem 0;
-            border-radius: 8px;
-            font-size: 0.95rem;
-        }
-        .btn-method {
-            background: #2e7d32;
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.2s;
-            margin-top: 0.8rem;
-        }
-        .btn-method:hover {
-            background: #1b5e20;
-        }
-        .footer {
-            margin-top: auto;
-            background: #0b2b44;
-            color: #b0c7d9;
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif; background: #f4f7fa; color: #1a2b3c; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+        .site-header { background: #0b2b44; color: white; padding: 1rem 2rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.6rem; font-weight: 600; letter-spacing: 0.5px; }
+        .main-nav a { color: #ccddee; text-decoration: none; font-weight: 500; padding: 0.4rem 0; margin-left: 2rem; border-bottom: 2px solid transparent; transition: 0.2s; }
+        .main-nav a:hover, .main-nav a.active { color: white; border-bottom-color: #4fc3f7; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 2rem; flex: 1; }
+        h1 { font-size: 2.2rem; color: #0b2b44; margin-bottom: 1.5rem; border-left: 6px solid #2e7d32; padding-left: 1.2rem; }
+        .experiment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .exp-card { background: white; border-radius: 14px; padding: 1.8rem; box-shadow: 0 8px 20px rgba(0,0,0,0.04); border-left: 6px solid #2e7d32; }
+        .exp-card h2 { font-size: 1.5rem; color: #0b2b44; }
+        .tag { display: inline-block; background: #e8f5e9; color: #2e7d32; font-weight: 600; font-size: 0.8rem; padding: 0.2rem 1rem; border-radius: 20px; margin: 0.6rem 0 0.8rem; }
+        .safety { background: #fff8e1; border-left: 4px solid #f9a825; padding: 0.7rem 1rem; margin: 1rem 0; border-radius: 8px; font-size: 0.95rem; }
+        .btn-method { background: #2e7d32; color: white; border: none; padding: 0.5rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: 0.2s; margin-top: 0.8rem; }
+        .btn-method:hover { background: #1b5e20; }
+        .footer { margin-top: auto; background: #0b2b44; color: #b0c7d9; text-align: center; padding: 1.5rem; font-size: 0.9rem; }
     </style>
 </head>
 <body>
     <header class="site-header">
         <div class="logo">Physics in Action</div>
-       <nav class="main-nav">
-    <a href="index.html">Home</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="practical.html">Practical Work</a>
-    <a href="projects.html">Projects</a>
-    <a href="glossary.html">Glossary</a>
-    <a href="formulas.html">Formulas</a>
-    <a href="resources.html">Resources</a>
-    <a href="about.html">About</a>
-</nav>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="practical.html" class="active">Practical Work</a>
+            <a href="projects.html">Projects</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="formulas.html">Formulas</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
 
     <main class="container">
